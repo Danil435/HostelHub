@@ -1,0 +1,18 @@
+@use 'font.scss';
+
+.reviews {
+	height: 530px;
+	&__container {
+		max-width: 1494px;
+	}
+	&__subtitle {
+		@include font.subtitle;
+		margin-top: 130px;
+		margin-bottom: 100px;
+		max-width: 683px;
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+}

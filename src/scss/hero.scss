@@ -1,0 +1,35 @@
+@use '/src/scss/font.scss';
+
+.hero {
+	background-color: #000;
+	height: 1000px;
+
+	&__container {
+		display: flex;
+	}
+	&__content {
+		text-align: center;
+		margin: auto;
+		max-width: 575px;
+	}
+	&__logo {
+		position: absolute;
+		top: 40px;
+	}
+	&__content-title {
+		@include font.hero-title;
+	}
+	&__content-button {
+		@include font.button;
+		display: inline-block;
+		margin-top: 55px;
+	}
+	&__img {
+		width: 100%;
+		object-fit: cover;
+	}
+	&__content-slide {
+		display: block;
+		margin-top: 83px;
+	}
+}

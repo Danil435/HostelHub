@@ -1,0 +1,28 @@
+@use 'font.scss';
+
+.hosting {
+	background-color: $Bg-Color;
+	&__container {
+		text-align: center;
+		max-width: 1016px;
+	}
+	&__subtitle {
+		@include font.subtitle-secondary;
+		padding-top: 400px;
+		margin-bottom: 100px;
+	}
+	&__button {
+		@include button;
+	}
+	&__content {
+		margin-top: 100px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__content-card-subtext {
+		margin-top: 30px;
+		font-size: 28px;
+		color: #fff;
+		text-align: start;
+	}
+}
