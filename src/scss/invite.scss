@@ -1,23 +1,31 @@
 @use 'font.scss';
 
-.hero {
+.invite {
 	background-color: $black-color;
 	height: 1000px;
 
 	&__container {
 		display: flex;
+		position: relative;
 	}
 	&__content {
 		text-align: center;
 		margin: auto;
-		max-width: 575px;
+		max-width: 700px;
 	}
 	&__logo {
 		position: absolute;
-		top: 40px;
+		margin-top: 40px;
+		left: 0;
 	}
-	&__content-title {
-		@include font.hero-title;
+	&__content-subtitle {
+		@include font.subtitle-secondary;
+	}
+	&__content-text {
+		@include font.text;
+		margin-top: 50px;
+		text-wrap: balance;
+		color: #a1a1a1;
 	}
 	&__content-button {
 		@include font.button;

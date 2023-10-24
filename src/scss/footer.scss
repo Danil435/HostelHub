@@ -1,0 +1,8 @@
+@use 'font.scss';
+
+.footer {
+	background-color: #00c296;
+	&__container {
+		padding-top: 20px;
+	}
+}

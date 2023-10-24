@@ -12,11 +12,15 @@
 }
 
 @mixin subtitle-secondary {
-	@include title(64px, variables.$Secodary-color, 700);
+	@include title(64px, variables.$Secondary-color, 700);
 }
 
 @mixin hero-title {
-	@include title(67px, variables.$Secodary-color, 700);
+	@include title(67px, variables.$Secondary-color, 700);
+}
+
+@mixin text {
+	@include title(24px, variables.$black-color, 700);
 }
 
 @mixin button {

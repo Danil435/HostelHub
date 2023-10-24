@@ -1,22 +1,23 @@
 @use 'font.scss';
 
-.reviews {
-	height: 530px;
+.art {
 	&__container {
-		max-width: 1494px;
+		padding-bottom: 125px;
 	}
 	&__subtitle {
 		@include font.subtitle;
-		margin-top: 130px;
-		margin-bottom: 100px;
-		max-width: 683px;
+		margin-top: 135px;
+		max-width: 870px;
 	}
 	&__content {
+		margin-top: 100px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		column-gap: 18px;
 		row-gap: 18px;
-		max-width: 1494px;
+	}
+	&__content-text {
+		@include font.text;
 	}
 }
